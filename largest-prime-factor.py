@@ -9,9 +9,10 @@ def isPrime(value):
   return prime
 
 try:
-  value = int(input("Enter a number: "))
+  value = abs(int(input("Enter a number: ")))
 except ValueError:
   print("You did not enter a valid number")
+  exit()
 
 found = False
 for divisor in range(value, 1, -1):
